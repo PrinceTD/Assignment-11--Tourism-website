@@ -1,0 +1,20 @@
+.banner{
+    background-image: url(../../video/travel.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+.color{
+    color: #FF6704;
+   
+}
+/* .border-clr{
+    padding: 10px;
+    border-style:solid ;
+    border-width: 0px 1px 1px 0px ;
+    border-color:#FF6704;
+} */
+.btn{
+    padding: 10px 30px;
+    border: #FF6704 2px solid;
+}
