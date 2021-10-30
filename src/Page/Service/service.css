@@ -3,3 +3,7 @@
     border-width: 0px 2px 2px 0px;
     border-color: #FF6704;
 }
+.btn{
+    padding: 5px 10px;
+    border: #FF6704 2px solid;
+}

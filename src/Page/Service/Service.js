@@ -7,18 +7,20 @@ const Service = (props) => {
     const { name, img, details, price } = props.service
     return (
         <div>
-            <div class="card mb-4 back-border mt-5">
-                <div class="row g-0">
-                    <div class="col-md-4 ">
-                       <img src={img} class="img-fluid rounded-start" alt="" />
+
+            <div className="card mb-4 back-border mt-5">
+                <div className="row g-0">
+                    <div className="col-md-4 ">
+                       <img src={img} className="img-fluid rounded-start" alt="" />
                     </div>
-                    <div class="col-md-8">
-                        <div class="card-body">
-                            <h5 class="card-title">{name}</h5>
-                            <p class="card-text">{details}</p>
+                    <div className="col-md-8">
+                        <div className="card-body">
+                            <h5 className="card-title">{name}</h5>
+                            <p className="card-text">{details}</p>
                             <h2>
                                 ${price}
                             </h2>
+                            <button className=' btn'>BOOK NOW</button>
                         </div>
 
                     </div>
