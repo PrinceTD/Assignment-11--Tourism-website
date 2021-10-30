@@ -4,7 +4,7 @@ import Service from '../../Page/Service/Service';
 const HomeService = () => {
     const [service, setService] = useState([]);
     useEffect(() => {
-        fetch(`./FackData.json`)
+        fetch(`http://localhost:5000/service`)
             .then(res => res.json())
             .then(data => setService(data));
     }, [])

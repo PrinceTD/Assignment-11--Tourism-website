@@ -2,7 +2,6 @@ import React from 'react';
 import Banner from '../../Page/BannerPage/Banner';
 import Footer from '../../Page/Footer/Footer';
 import OurService from '../../Page/OurService/OurService';
-import Services from '../../Page/Service/Services';
 import Video from '../../Page/Video/Video';
 import Header from '../Header/Header';
 import HomeService from '../HomeService/HomeService';

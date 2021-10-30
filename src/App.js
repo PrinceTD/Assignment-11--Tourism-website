@@ -11,6 +11,7 @@ import Services from './Page/Service/Services';
 import About from './Page/About/About';
 import Login from './Page/Login/Login';
 import Contacts from './Page/contacts/Contacts';
+import AddNewPlace from './Page/Service/AddNewPlace';
 
 function App() {
   return (
@@ -34,6 +35,9 @@ function App() {
             </Route>
             <Route path="/contact">
               <Contacts></Contacts>
+            </Route>
+            <Route path="/addNewService">
+              <AddNewPlace></AddNewPlace>
             </Route>
           </Switch>
         </Router>

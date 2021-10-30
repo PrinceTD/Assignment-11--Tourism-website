@@ -7,11 +7,11 @@ const Service = (props) => {
     const { name, img, details, price } = props.service
     return (
         <div>
-
+           
             <div className="card mb-4 back-border mt-5">
                 <div className="row g-0">
                     <div className="col-md-4 ">
-                       <img src={img} className="img-fluid rounded-start" alt="" />
+                       <img src={img} className="rounded-start" alt="" height="250px" width="350px"/>
                     </div>
                     <div className="col-md-8">
                         <div className="card-body">
