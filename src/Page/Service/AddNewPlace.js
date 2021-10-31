@@ -10,7 +10,7 @@ const AddNewPlace = () => {
     const { register, handleSubmit, reset } = useForm();
     const onSubmit = data => {
         console.log(data)
-        axios.post("http://localhost:5000/service", data)
+        axios.post("https://thawing-meadow-37880.herokuapp.com/service", data)
             .then(res => {
                 if (res.data.insertedId) {
                     alert("added a successfullu")
@@ -20,23 +20,21 @@ const AddNewPlace = () => {
     };
 
     return (
-
         <div>
             <div className="container">
-            <Header></Header>
-            <div className="text-center">
-                <h2>Add Your Favourite place</h2>
-                <form onSubmit={handleSubmit(onSubmit)} className="addData">
-                    <input {...register("name")} placeholder="Place Name" />
-                    <textarea {...register("details")} placeholder='Description' />
-                    <input type="price" {...register("price")} placeholder='price' />
-                    <input type="img" {...register("img")} placeholder='Image Link' />
-                    <input type="submit" />
-                </form>
+                <Header></Header>
+                <div className="text-center">
+                    <h2>Add Your Favourite place</h2>
+                    <form onSubmit={handleSubmit(onSubmit)} className="addData mt-5">
+                        <input className="mb-3 style-border" {...register("name")} placeholder="Place Name" required />
+                        <textarea className="mb-3  style-border" {...register("details")} placeholder='Description' required />
+                        <input className="mb-3 style-border" type="price" {...register("price")} placeholder='price' required />
+                        <input className="mb-3 style-border" type="img" {...register("img")} placeholder='Image Link' required />
+                        <input className="btn" type="submit" />
+                    </form>
+                </div>
             </div>
-               
-        </div>
-        <Footer></Footer>
+            <Footer></Footer>
         </div>
     );
 };

@@ -1,13 +1,12 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import Header from '../../Componets/Header/Header';
-import AddNewPlace from './AddNewPlace';
 import Service from './Service';
 
 const Services = () => {
     const [service, setService] = useState([]);
     useEffect(() => {
-        fetch(`http://localhost:5000/service`)
+        fetch(`https://thawing-meadow-37880.herokuapp.com/service`)
             .then(res => res.json())
             .then(data => setService(data));
     }, [])

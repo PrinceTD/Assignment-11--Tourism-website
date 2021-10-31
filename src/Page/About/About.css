@@ -1,0 +1,11 @@
+.bg-img{
+    background-image: url(../../img/39065169.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 150px;
+}
+.clr-border{
+    border-style: solid;
+    border-width: 0px 2px 2px 0px;
+    border-color: #FF6704;
+}

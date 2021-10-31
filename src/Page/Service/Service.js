@@ -1,6 +1,7 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './service.css'
+import { Link } from 'react-router-dom';
 
 
 const Service = (props) => {
@@ -20,7 +21,7 @@ const Service = (props) => {
                             <h2>
                                 ${price}
                             </h2>
-                            <button className=' btn'>BOOK NOW</button>
+                            <Link to="/service"><button className=' btn'>BOOK NOW</button></Link>
                         </div>
 
                     </div>

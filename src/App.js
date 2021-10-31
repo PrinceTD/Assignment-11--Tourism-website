@@ -12,10 +12,13 @@ import About from './Page/About/About';
 import Login from './Page/Login/Login';
 import Contacts from './Page/contacts/Contacts';
 import AddNewPlace from './Page/Service/AddNewPlace';
+import AuthProvider from './Context/AuthProvider';
+import PrivetRout from './PrivetRoute/PrivetRout';
 
 function App() {
   return (
     <div>
+      <AuthProvider>
         <Router>
           <Switch>
             <Route exact path="/">
@@ -24,23 +27,25 @@ function App() {
             <Route path="/home">
               <Home></Home>
             </Route>
-            <Route path="/service">
+            <PrivetRout path="/service">
               <Services></Services>
-            </Route>
+            </PrivetRout>
             <Route path="/about">
               <About></About>
             </Route>
+
+            <PrivetRout path="/contact">
+              <Contacts></Contacts>
+            </PrivetRout>
+            <PrivetRout path="/addNewService">
+              <AddNewPlace></AddNewPlace>
+            </PrivetRout>
             <Route path="/login">
               <Login></Login>
             </Route>
-            <Route path="/contact">
-              <Contacts></Contacts>
-            </Route>
-            <Route path="/addNewService">
-              <AddNewPlace></AddNewPlace>
-            </Route>
           </Switch>
         </Router>
+      </AuthProvider>
     </div>
   );
 }

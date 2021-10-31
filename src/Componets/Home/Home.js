@@ -15,7 +15,6 @@ const Home = () => {
             <HomeService></HomeService>
             
             <Video></Video>
-
             <Footer></Footer>
         </div>
     );

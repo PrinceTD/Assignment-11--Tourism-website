@@ -1,4 +1,19 @@
 .addData{
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+}
+.style-border{
+    border-style: solid;
+    border-width: 0px 2px 2px 2px;
+    border-radius: 10%;
+    border-color: #FF6704;
+    width: 50%;
+    padding: 5px;
+}
+.btn{
+    padding: 5px 10px;
+    border: #FF6704 2px solid;
 }
