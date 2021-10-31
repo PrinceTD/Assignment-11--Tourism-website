@@ -3,6 +3,7 @@ import Header from '../../Componets/Header/Header';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import useAuth from '../../hooks/useAuth';
 import { useHistory, useLocation } from 'react-router';
+import "./login.css"
 
 
 const Login = () => {
@@ -22,8 +23,8 @@ const Login = () => {
         <div>
             <Header></Header>
             <div className='text-center'>
-                <h2>LogIn</h2>
-                <button onClick={handelGoogleLogin} >google sign in</button>
+                <h2 className="m-5 border-card">Plase Login</h2>
+                <button className='bg-danger text-light border-0 p-2' onClick={handelGoogleLogin}><i className="fab fa-google pe-2"></i>google sign in</button>
             </div>
 
         </div>

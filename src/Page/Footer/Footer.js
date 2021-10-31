@@ -7,7 +7,7 @@ const Footer = () => {
        
         <div className='background'>
             <div className='container '>
-            <div className='m-5 p-5 text-center'>
+            <div className='mt-5 pt-5 text-center'>
                 <div className='p-2'>
                     <h2 className="footer pb-3">
                         STAY IN TOUCH

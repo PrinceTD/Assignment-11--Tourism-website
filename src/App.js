@@ -14,6 +14,7 @@ import Contacts from './Page/contacts/Contacts';
 import AddNewPlace from './Page/Service/AddNewPlace';
 import AuthProvider from './Context/AuthProvider';
 import PrivetRout from './PrivetRoute/PrivetRout';
+import Notfound from './NotFound/Notfound';
 
 function App() {
   return (
@@ -42,6 +43,9 @@ function App() {
             </PrivetRout>
             <Route path="/login">
               <Login></Login>
+            </Route>
+            <Route exact path="*">
+              <Notfound></Notfound>
             </Route>
           </Switch>
         </Router>

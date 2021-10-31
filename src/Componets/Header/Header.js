@@ -4,10 +4,11 @@ import { Container, Nav, Navbar, NavLink } from 'react-bootstrap';
 import "./header.css"
 import { Link } from 'react-router-dom';
 import useAuth from '../../hooks/useAuth';
+import Button from '@restart/ui/esm/Button';
 
 
 const Header = () => {
-const {user, logOut}= useAuth();
+    const { user, logOut } = useAuth();
     return (
         <Navbar bg="light" expand="lg">
             <Container>
@@ -19,8 +20,9 @@ const {user, logOut}= useAuth();
                         <Link className='nav-bar' to='/about'>About</Link>
                         <Link className='nav-bar' to='/service'>Service</Link>
                         <Link className='nav-bar' to='/contact'>Contact us</Link>
-                        <Link className='nav-bar' to='/login'>LogIn</Link>
-                        {user?.email && <button onClick={logOut}>logOut</button>}
+                        {user?.displayName ?
+                            <span className='ps-2'> <Button className='nav-bar border-0' onClick={logOut} variant="dark">logOut</Button> </span> :
+                            <Link to="/login" className='nav-bar'>LogIn</Link>}
                     </Nav>
 
                 </Navbar.Collapse>
